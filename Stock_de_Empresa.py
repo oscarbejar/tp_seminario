@@ -3,6 +3,7 @@ print("-"*50)
 print("Stock de Empresa")
 print("_"*50)
 print("-"*50)
+print("hola")
 
 cargador = True
 while cargador == True:
