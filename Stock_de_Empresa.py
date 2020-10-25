@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 print("_"*50)
 print("-"*50)
 print("Stock de Empresa")
@@ -34,3 +35,10 @@ for s in stock:
 print("-"*50)
 print("programa finalizado")
 print("-"*50)
+=======
+print("hola")
+print("Si Se Puede ver?")
+print("Seguimos de prueba")
+print("Hola MX")
+print("Prueba")
+>>>>>>> 486633a95d50dd797cf4030ca196d95c5034bf9d
