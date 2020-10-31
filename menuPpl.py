@@ -3,7 +3,8 @@ def menuPpl():
         1: "Ingresar Articulos",
         2: "Editar Articulos",
         3: "Eliminar Articulo",
-        4: "Salir del Sitema"
+        4: "Salir del Sitema",
+        5: "holaa"
 }
     return menuppl
 

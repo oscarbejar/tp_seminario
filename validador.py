@@ -1,8 +1,13 @@
+from menuPpl import *
+
 def validar(option, msj):
-    while option != 1 and option != 2 and option != 3 and option != 4:
-        print("Opción no valida")
-        print(msj,end=": ")
-        option = int(input())
+    msjnovalida = "Opción no valida" 
+    while not option.isdigit():
+        print(msjnovalida)
+        option = input(msj)
+    while int(option) not in menuPpl().keys():
+        print(msjnovalida)
+        option = int(input(msj))
     return option
     
     

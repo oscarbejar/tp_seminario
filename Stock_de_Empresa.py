@@ -11,7 +11,7 @@ def main():
     mostrarMenuPpl()
 
     msj = "Ingrese opcion: "
-    opcion = int(input(msj))
+    opcion = input(msj)
     res = validar(opcion,msj)
     print(res)
 main()
