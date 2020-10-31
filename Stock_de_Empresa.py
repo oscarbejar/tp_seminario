@@ -1,17 +1,16 @@
-from mensajes import *
-from menuPpl import *
-from validador import *
+from Mensajes import *
+from MenuPpl import *
+from Validador import *
 from Inventario import *
 
 
 def main():
     bienvenida()
     mostrarMenuPpl()
-    ingresarOpcion()
-    inventario()
+    op = ingresarOpcion()
+    msjSeleccionarOpcion(op)
+    seleccion(op)
 
 
-
-
-    despedida()
+    #despedida()
 main()

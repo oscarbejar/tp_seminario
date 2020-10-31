@@ -6,9 +6,6 @@ def inventario():
     while cargador == True:
 
         id = int(input("Ingrese el id de producto a incluir: "))
-
-        
-
         if id not in idProd:
             idProd.append(id)
             marcaProd = input("Ingrese marca del producto: ")

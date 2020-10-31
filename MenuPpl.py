@@ -1,3 +1,5 @@
+from Inventario import *
+
 def menuPpl():
     menuppl = {
         1: "Ingresar Articulos",
@@ -7,7 +9,10 @@ def menuPpl():
 }
     return menuppl
 
-def mostrarMenuPpl():
-    print("Menu Principal de Opciones: \n")
-    for o in menuPpl():
-        print(o , menuPpl()[o],"\n")
+def seleccion(op):
+    if op == "1":
+        ingresos()
+    if op == "2":
+        inventario()
+    if op == "3":
+        Ventas()
