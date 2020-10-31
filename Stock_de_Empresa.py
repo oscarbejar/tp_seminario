@@ -7,7 +7,8 @@ from Inventario import *
 def main():
     bienvenida()
     mostrarMenuPpl()
-    op = ingresarOpcion()
+    op = ingresarOpcion("Seleccione por favor opcion: ")
+    op =validarMenu(op,"Seleccione por favor opcion: ")
     msjSeleccionarOpcion(op)
     seleccion(op)
 

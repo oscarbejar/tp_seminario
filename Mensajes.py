@@ -3,7 +3,7 @@ from MenuPpl import *
 def bienvenida():
     print("_"*60)
     print("-"*60)
-    print(("         Bienvenido al Sistema de Stock de Empresa          ").upper())
+    print(("       Bienvenido al Sistema de Stock de la Empresa         ").upper())
     print(" ___________________________________________________________ ")
     print("|                                                           |")
     print("|     22222       22222222    22222222      2222    2222    |")
@@ -39,4 +39,3 @@ def msjSeleccionarOpcion(op):
         print("\n{}".format(menuPpl()[int(op)]).upper())
         print("_"*60)
         print("-"*60)
-    

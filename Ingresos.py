@@ -1,2 +1,2 @@
 def ingresos():
-    None
+    return None

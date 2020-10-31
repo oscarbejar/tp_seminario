@@ -1,0 +1,2 @@
+def ventas():
+    return None
