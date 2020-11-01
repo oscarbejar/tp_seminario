@@ -1,5 +1,6 @@
+def inventario():
+    return None
 articulos = {
-        1:{"Marca":"Nike","Modelo":"remera","Color":"azul","Cantidad":1,"Precio":100 }
+        1:{"marca":"Nike","modelo":"remera","color":"azul","precio":100,"cantidad":1}
     }
 
-print(articulos)

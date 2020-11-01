@@ -1,1 +1,2 @@
-from Inventario import *
+def ventas():
+    return None
