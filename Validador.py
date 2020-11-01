@@ -1,5 +1,6 @@
 from Mensajes import *
 from MenuPpl import *
+from Inventario import *
 
 def ingresarOpcion(msj):
     opcion = input(msj)
@@ -19,4 +20,17 @@ def validarMenu(option, msj):
         mostrarMenuPpl()
         print(msjnovalida)
         option = input(msj)
-    return option   
+    return option  
+
+def validarVenta(option,msj):
+    while not option.isdigit() or option not in articulos().keys():
+        print("ingrese un id valido")
+        option=input(msj)
+
+    return option
+def validarCantidad(option,msj, id):
+    while option>articulos()[id]["Cantidad"]:
+        print("la cantidad supera al stock disponible")
+        option=input(msj)
+
+    return option

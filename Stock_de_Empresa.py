@@ -11,7 +11,8 @@ def main():
     op = validarMenu(op,"Seleccione por favor opcion: ")
     msjSeleccionarOpcion(op)
     seleccion(op)
-    print(inventario())
+    
+    
 
 
     #despedida()
