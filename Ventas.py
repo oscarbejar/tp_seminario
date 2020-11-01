@@ -1,2 +1,8 @@
+from Inventario import *
+
+
 def ventas():
-    return None
+    id = 2
+    print(articulos[id]["Cantidad"])
+
+ventas()
