@@ -23,6 +23,7 @@ def despedida():
     print("_"*60)
     print("-"*60)
 
+
 def mostrarMenuPpl():
     print("-"*60)
     print("Menu Principal de Opciones: ")
