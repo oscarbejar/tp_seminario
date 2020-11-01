@@ -32,11 +32,8 @@ def mostrarMenuPpl():
         print(o ,"-", menuPpl()[o],"\n")
 
 def msjSeleccionarOpcion(op):
-    if int(op) == len(menuPpl()):
-        despedida()
-    else:
-        print("_"*60)
-        print("-"*60)
-        print("\n{}".format(menuPpl()[int(op)]).upper())
-        print("_"*60)
-        print("-"*60)
+    print("_"*60)
+    print("-"*60)
+    print("\n{}".format(menuPpl()[int(op)]).upper())
+    print("_"*60)
+    print("-"*60)

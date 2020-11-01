@@ -2,18 +2,30 @@ from Mensajes import *
 from MenuPpl import *
 from Validador import *
 from Inventario import *
-
+from Ingresos import *
 
 def main():
-    bienvenida()
     mostrarMenuPpl()
     op = ingresarOpcion("Seleccione por favor opcion: ")
     op = validarMenu(op,"Seleccione por favor opcion: ")
     msjSeleccionarOpcion(op)
-    seleccion(op)
-    
-    
+
+    if op == "1":
+        ingresarArt(ingresosArt())
+    if op == "2":
+        modificacion()
+    if op == "3":
+        ventas()
+    if int(op) == len(menuPpl()):
+        pass
 
 
-    #despedida()
+
+bienvenida()
 main()
+conf = repetirOperacion()
+while (conf == "y" or conf == "Y"):
+    main()
+    conf = repetirOperacion()
+despedida()
+
