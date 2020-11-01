@@ -8,9 +8,10 @@ def main():
     bienvenida()
     mostrarMenuPpl()
     op = ingresarOpcion("Seleccione por favor opcion: ")
-    op =validarMenu(op,"Seleccione por favor opcion: ")
+    op = validarMenu(op,"Seleccione por favor opcion: ")
     msjSeleccionarOpcion(op)
     seleccion(op)
+    print(inventario())
 
 
     #despedida()
