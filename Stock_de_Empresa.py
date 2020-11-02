@@ -15,7 +15,9 @@ def main():
     if op == "2":
         modificacion()
     if op == "3":
-        ventas()
+        clave=ingresarOpcion("ingrese el ID del articulo")
+        clave=validarVenta(clave,"ingrese el ID del articulo")
+        ingresarUnidades(clave)
     if int(op) == len(menuPpl()):
         pass
 
