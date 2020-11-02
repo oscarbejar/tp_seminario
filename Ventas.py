@@ -1,3 +1,5 @@
+def ventas():
+    return None
 """from Inventario import *
 from Validador import *
 
@@ -12,8 +14,7 @@ def ventas():
     clave=validarCantidad(unidades,"ingrese el numero de unidades vendidas",clave)
     articulos[clave]["Cantidad"]-=unidades
    """ 
-def ventas()
-    return None
+
     
    # print(articulos[id]["Cantidad"])
     

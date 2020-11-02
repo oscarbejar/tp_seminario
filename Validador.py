@@ -24,7 +24,7 @@ def validarMenu(option, msj):
     return option  
 
 def validarVenta(option,msj):
-    while not option.isdigit() or option not in articulos().keys():
+    while not option.isdigit() or int(option) not in articulos.keys():
         print("ingrese un id valido")
         option=input(msj)
 

@@ -27,5 +27,7 @@ conf = repetirOperacion()
 while (conf == "y" or conf == "Y"):
     main()
     conf = repetirOperacion()
+verStock()
+guardarInventario()
+verStock()
 despedida()
-
