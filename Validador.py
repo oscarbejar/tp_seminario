@@ -1,6 +1,7 @@
 from Mensajes import *
 from MenuPpl import *
 from Inventario import *
+from Ventas import *
 
 def ingresarOpcion(msj):
     opcion = input(msj)
