@@ -23,18 +23,16 @@ def validarMenu(option, msj):
         option = input(msj)
     return option  
 
+<<<<<<< HEAD
 def validarVenta(option,msj):
     while not option.isdigit() or int(option) not in articulos.keys():
         print("ingrese un id valido")
         option=input(msj)
+=======
+>>>>>>> 8647d080a71f575e9f3d3d0e3c23469a27d6d850
 
-    return option
-def validarCantidad(option,msj, id):
-    while option>articulos()[id]["Cantidad"]:
-        print("la cantidad supera al stock disponible")
-        option=input(msj)
 
-    return option
+
    
 
 def confirmacion(msj):
