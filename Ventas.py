@@ -1,18 +1,4 @@
-<<<<<<< HEAD
-def ventas():
-    return None
-"""from Inventario import *
-from Validador import *
-
-caja={}
-def ventas():
-    clave = ingresarOpcion()
-    clave = validarVenta(clave,"ingrese el ID del articulo")
-    #id=int(input("ingrese el numero del articulo: "))
-  
-=======
 from Inventario import *
->>>>>>> 8647d080a71f575e9f3d3d0e3c23469a27d6d850
 
 
 
@@ -34,13 +20,8 @@ def validarCantidad(option,msj, id):
 def ingresarUnidades(clave):
     unidades=int(input("ingrese el numero de unidades vendidas: "))
     clave=validarCantidad(unidades,"ingrese el numero de unidades vendidas",clave)
-<<<<<<< HEAD
-    articulos[clave]["Cantidad"]-=unidades
-   """ 
-=======
     articulos[clave]["cantidad"]-=unidades
     
->>>>>>> 8647d080a71f575e9f3d3d0e3c23469a27d6d850
 
     
    # print(articulos[id]["Cantidad"])
