@@ -1,4 +1,3 @@
-from Inventario import *
 
 """
 

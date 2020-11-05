@@ -15,9 +15,9 @@ def validarN(option, msj):
         option = input(msj)
     return option
     
-def validarMenu(option, msj):
+def validarMenu(option, msj, menu):
     msjnovalida = "\n********¡Opción no encontrada!***********\n" 
-    while not option.isdigit() or (int(option) not in menuPpl().keys()):
+    while not option.isdigit() or (int(option) not in menu.keys()):
         mostrarMenuPpl()
         print(msjnovalida)
         option = input(msj)
