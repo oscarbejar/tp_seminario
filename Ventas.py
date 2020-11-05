@@ -1,6 +1,6 @@
 from Inventario import *
 
-
+"""
 
 #not option.isdigit() or
 
@@ -27,3 +27,4 @@ def ingresarUnidades(clave):
    # print(articulos[id]["Cantidad"])
     
 
+"""

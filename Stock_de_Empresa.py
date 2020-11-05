@@ -13,7 +13,7 @@ def main():
     if op == "1":
         ingresarArt(ingresosArt())
     if op == "2":
-        modificacion()
+        modificarArt()
     if op == "3":
         clave=ingresarOpcion("ingrese el ID del articulo")
         clave=validarVenta(clave,"ingrese el ID del articulo")
