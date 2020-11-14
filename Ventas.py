@@ -24,7 +24,8 @@ def ingresarUnidades(clave):
     registroVenta+=1
     caja={registroVenta:{articulos[int(id)]["marca"]}}
     print(caja.keys())
-    print("hola oscar")
+    print("chau oscar")
+    
     
 
     
