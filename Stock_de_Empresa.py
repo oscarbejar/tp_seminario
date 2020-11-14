@@ -4,6 +4,7 @@ from Validador import *
 from Inventario import *
 from Ingresos import *
 from Modificacion import *
+from Ventas import *
 
 def main():
     mostrarMenuPpl()

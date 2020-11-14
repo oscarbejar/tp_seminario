@@ -1,7 +1,7 @@
+from Validador import *
+from Inventario import *
 
-
-
-#not option.isdigit() or
+caja = {}
 
 def validarVenta():
     msjnovalida = "********¡Tipo de Dato no valido!***********\n" 
@@ -36,12 +36,15 @@ def validarCantidad(cant,msj, id):
 def ingresarUnidades(clave):
     registroVenta=0
     unidades=int(input("ingrese el numero de unidades vendidas: "))
-    clave=validarCantidad(unidades,"ingrese el numero de unidades vendidas",clave)
-    articulos[clave]["cantidad"]-=unidades
+    unidades = validarCantidad(unidades,"ingrese el numero de unidades vendidas",clave)
+    articulos[int(clave)]["cantidad"]-=int(unidades)
     registroVenta+=1
-    caja={registroVenta:{articulos[int(id)]["marca"]}}
-    print(caja.keys())
-    print("hola oscar")
+    caja = {registroVenta:{id:int(clave),"marca":articulos[int(clave)]["marca"],"unidades": int(unidades)}}
+    print("\nGenerando reporte...\n")
+    print("Regsistro de la venta N: {}".format(registroVenta))
+    print("ID de articulo: {}".format(int(clave)))
+    print("Marca: {}".format(articulos[int(clave)]["marca"]))
+    print("Unidades vendidas: {}".format(int(unidades)))
     
 
     
