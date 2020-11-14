@@ -1,6 +1,9 @@
 from Inventario import *
 
 
+caja={}
+
+
 
 #not option.isdigit() or
 
@@ -18,9 +21,13 @@ def validarCantidad(option,msj, id):
     return option
 
 def ingresarUnidades(clave):
+    registroVenta=0
     unidades=int(input("ingrese el numero de unidades vendidas: "))
     clave=validarCantidad(unidades,"ingrese el numero de unidades vendidas",clave)
     articulos[clave]["cantidad"]-=unidades
+    registroVenta+=1
+    caja={registroVenta:{articulos[int(id)]["marca"]}}
+    print(caja.keys())
     
 
     
