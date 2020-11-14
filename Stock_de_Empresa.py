@@ -14,10 +14,11 @@ def main():
     if op == "1":
         ingresarArt(ingresosArt())
     if op == "2":
-        modificarArt()
+        verArticulo()
     if op == "3":
-        clave=ingresarOpcion("ingrese el ID del articulo")
-        clave=validarVenta(clave,"ingrese el ID del articulo")
+        modificarArt()
+    if op == "4":
+        clave = validarVenta()
         ingresarUnidades(clave)
     if int(op) == len(menuppl):
         pass
@@ -30,7 +31,11 @@ conf = repetirOperacion()
 while (conf == "y" or conf == "Y"):
     main()
     conf = repetirOperacion()
+print("Stock Actual")
 verStock()
+print("\nGuardando información...\n")
 guardarInventario()
+print("Stock Actual")
 verStock()
 despedida()
+#2

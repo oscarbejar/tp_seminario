@@ -36,29 +36,29 @@ def modificarArt():
     if opMod == 1:
         msjMarca = "Ingrese Marca del Articulo: "
         marca = confirmacion(msjMarca)
-        articulos[int(idArt)][marca] = marca
+        articulos[int(idArt)]["marca"] = marca
     elif opMod == 2:
         msjModelo = "Ingrese Modelo del Articulo: "
         modelo = confirmacion(msjModelo)
-        articulos[int(idArt)][modelo] = modelo
+        articulos[int(idArt)]["modelo"] = modelo
     elif opMod == 3:
         msjColor = "Ingrese Color del Articulo: "
         color = confirmacion(msjColor)
-        articulos[int(idArt)][color] = color
+        articulos[int(idArt)]["color"] = color
     elif opMod == 4:
         msjPrecio = "Ingrese Precio del Articulo: " 
         precio = confirmacion(msjPrecio)
         while not precio.isdigit():
             print(msjnovalida)
             precio = confirmacion(msjPrecio)
-        articulos[int(idArt)][precio] = precio
+        articulos[int(idArt)]["precio"] = precio
     elif opMod == 5:
         msjCantidad = "Ingresar cantidad de Articulos: "
         cantidad = confirmacion(msjCantidad)
         while not cantidad.isdigit():
             print(msjnovalida)
             cantidad = confirmacion(msjCantidad)
-        articulos[int(idArt)][cantidad] = cantidad
+        articulos[int(idArt)]["cantidad"] = cantidad
     else:
         valorN(opMod)
         

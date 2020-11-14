@@ -4,8 +4,8 @@ from Modificacion import *
 
 menuppl = {
         1: "Ingresar Articulos",
-        2: "Modificar Articulos",
-        3: "Ventas",
-        4: "Salir del Sitema"}
-
+        2: "Ver Articulo",
+        3: "Modificar Articulos",
+        4: "Ventas",
+        5: "Salir del Sitema"}
 

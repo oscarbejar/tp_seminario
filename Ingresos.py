@@ -38,13 +38,13 @@ def ingresosArt():
         print(msjnovalida)
         cantidad = confirmacion(msjCantidad)
 
-    artNv = {idArt : {"marca": marca, "modelo": modelo,"Color": color,"Precio": precio,"Cantidad": cantidad }}
+    artNv = {int(idArt) : {"marca": marca, "modelo": modelo,"Color": color,"Precio": precio,"Cantidad": int(cantidad) }}
     return artNv
 
 def ingresarArt(artNv):
-    print(articulos)
+    print("\nGuardando nuevo articulo...\n")
+    print("\nGUARDADO\n")
     articulos.update(artNv)
-    print(articulos)
     return None
 
 
