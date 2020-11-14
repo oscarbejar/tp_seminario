@@ -1,7 +1,3 @@
-from Inventario import *
-
-
-caja={}
 
 
 

@@ -28,12 +28,12 @@ def mostrarMenuPpl():
     print("-"*60)
     print("Menu Principal de Opciones: ")
     print("-"*60)
-    for o in menuPpl():
-        print(o ,"-", menuPpl()[o],"\n")
+    for o in menuppl:
+        print(o ,"-", menuppl[o],"\n")
 
 def msjSeleccionarOpcion(op):
     print("_"*60)
     print("-"*60)
-    print("\n{}".format(menuPpl()[int(op)]).upper())
+    print("\n{}".format(menuppl[int(op)]).upper())
     print("_"*60)
     print("-"*60)
