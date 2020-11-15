@@ -4,16 +4,16 @@ from Validador import *
 def inventario():
     return None
 articulos = {
-        0:{"marca":"Nike","modelo":"remera","color":"azul","precio":100,"cantidad":1}
+        0:{"marca":"Nike","modelo":"remera","color":"azul","precio":100,"cantidad":10}
     }
     #{"marca":"Nike","modelo":"remera","color":"azul","precio":100,"cantidad":1}
 #f
 def guardarInventario():
-    with open("datos.txt", "w") as datos:
+    with open("datos.csv", "w") as datos:
         datos.write(str(articulos))
 
 def verStock():
-    with open('datos.txt') as file:
+    with open('datos.csv') as file:
 	    for line in file:
 	        print(" ID: {}".format(line.strip().upper()))
 

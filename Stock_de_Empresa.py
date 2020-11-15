@@ -11,6 +11,7 @@ def main():
     mostrarMenuPpl()
     mostrarProg()
 
+
     conf = repetirOperacion()
     while (conf == "y" or conf == "Y"):
         mostrarMenuPpl()
@@ -25,5 +26,3 @@ def main():
 
 
 main()
-
-#2

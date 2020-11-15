@@ -3,6 +3,8 @@ from Inventario import *
 
 caja = {}
 
+cont = 1
+
 def validarVenta():
     msjnovalida = "********¡Tipo de Dato no valido!***********\n" 
     msjID = "Ingresar ID del Articulo : "
@@ -16,14 +18,6 @@ def validarVenta():
         option = confirmacion(msjID)
     return option
     
-def ingresarUnidades(clave):
-    print("\nCantidad en Stock actualmente del articulo: {}".format(articulos[int(clave)]["cantidad"]))
-    unidades= input("ingrese el numero de unidades vendidas: ")
-    cant = validarCantidad(unidades,"ingrese el numero de unidades vendidas: ",clave)
-    articulos[int(clave)]["cantidad"] -= int(cant)
-    print("\nActualizando información...\n")
-    print("Cantidad de Stock actualizada: {}".format(articulos[int(clave)]["cantidad"]))
-    
 
 def validarCantidad(cant,msj, id):
     while int(cant) > articulos[int(id)]["cantidad"]:
@@ -34,20 +28,22 @@ def validarCantidad(cant,msj, id):
 
 
 def ingresarUnidades(clave):
-    registroVenta=0
+    print("\nCantidad en Stock actualmente del articulo: {}".format(articulos[int(clave)]["cantidad"]))
     unidades=int(input("ingrese el numero de unidades vendidas: "))
-    unidades = validarCantidad(unidades,"ingrese el numero de unidades vendidas",clave)
+    unidades = validarCantidad(unidades,"ingrese el numero de unidades vendidas: ",clave)
     articulos[int(clave)]["cantidad"]-=int(unidades)
-    registroVenta+=1
-    caja = {registroVenta:{id:int(clave),"marca":articulos[int(clave)]["marca"],"unidades": int(unidades)}}
+    registroVenta = len(caja) + 1
+    ventas = {registroVenta:{id:int(clave),"marca":articulos[int(clave)]["marca"],"unidades": int(unidades)}}
+    caja.update(ventas)
     print("\nGenerando reporte...\n")
     print("Regsistro de la venta N: {}".format(registroVenta))
     print("ID de articulo: {}".format(int(clave)))
     print("Marca: {}".format(articulos[int(clave)]["marca"]))
     print("Unidades vendidas: {}".format(int(unidades)))
-    
 
-    
-   # print(articulos[id]["Cantidad"])
+def actualizarCaja():
+    with open("ventas.csv", "w") as datos:
+        datos.write(str(caja))
+
     
 

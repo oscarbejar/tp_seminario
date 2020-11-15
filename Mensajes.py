@@ -60,5 +60,6 @@ def mostrarProg():
             clave = validarVenta()
             ingresarUnidades(clave)
             guardarInventario()
+            actualizarCaja()
         if int(op) == len(menuppl):
             pass
