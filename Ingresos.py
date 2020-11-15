@@ -1,9 +1,8 @@
 from Inventario import *
 from Validador import *
 
-def ingresos():
-    return None
 
+"""Metodo que carga un nuevo articulo al sistema de stock en formato de diccionario con los detalles del articulo"""
 def ingresosArt():
     msjnovalida = "********¡Tipo de Dato no valido!***********\n" 
 
@@ -41,6 +40,8 @@ def ingresosArt():
     artNv = {int(idArt) : {"marca": marca, "modelo": modelo,"color": color,"precio": precio,"cantidad": int(cantidad) }}
     return artNv
 
+
+"""Metodo que actualiza el diccionario de articulos"""
 def ingresarArt(artNv):
     print("\nGuardando nuevo articulo...\n")
     print("\nGUARDADO\n")

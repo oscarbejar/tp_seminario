@@ -2,18 +2,21 @@ from Mensajes import *
 from MenuPpl import *
 from Inventario import *
 
+"""Metodo que toma un mensaje que le pasemos, lo muesta en pantalla y pide un tipo de dato """
 def ingresarOpcion(msj):
     opcion = input(msj)
     res = validarN(opcion, msj)
     return res
 
+"""Metodo que valida que el tipo de daro ingresado sea numerico"""
 def validarN(option, msj):
     msjnovalida = "********¡Tipo de Dato no valido!***********" 
     while not option.isdigit():
         print(msjnovalida)
         option = input(msj)
     return option
-    
+
+"""Metodo que valida que la opcion ingresada sea alguna de las que muestra el menu"""    
 def validarMenu(option, msj, menu):
     msjnovalida = "\n********¡Opción no encontrada!***********\n" 
     while not option.isdigit() or (int(option) not in menu.keys()):
@@ -26,7 +29,7 @@ def validarMenu(option, msj, menu):
 
 
    
-
+"""Metodo que solicita confirmacion del dato ingresado"""
 def confirmacion(msj):
     print("")
     op = input(msj)
@@ -42,7 +45,7 @@ def confirmacion(msj):
 
 
 
-
+"""Metodo que consulta antes de finalizar el programa, si se desea realizar alguna otra operacion dentro del sistema""" 
 def repetirOperacion():
     print("")
     conf = input("¿Deseas realizar otra operación? (y/N): ")

@@ -2,7 +2,7 @@ from Inventario import *
 from Ventas import *
 from Modificacion import *
 
-
+"""Menu principal del sistema en formato de diccionario"""
 menuppl = {
         1: "Ingresar Articulos",
         2: "Ver Stock Actual",
