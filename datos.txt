@@ -1,1 +1,1 @@
-{0: {'marca': 'Nike', 'modelo': 'remera', 'color': 'azul', 'precio': 100, 'cantidad': 0}}
+{0: {'marca': 'Nike', 'modelo': 'remera', 'color': 'azul', 'precio': 100, 'cantidad': 1}, 45: {'marca': 'adidas', 'modelo': 'zapatillas', 'Color': 'negras', 'Precio': '20000', 'Cantidad': 300}}
