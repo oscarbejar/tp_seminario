@@ -1,6 +1,6 @@
 from MenuPpl import *
 from Ingresos import *
-from Mensajes import *
+
 
 """Mensaje de bienvenida al inicio del programa"""
 def bienvenida():
