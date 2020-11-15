@@ -33,7 +33,7 @@ def ingresarUnidades(clave):
     unidades = validarCantidad(unidades,"ingrese el numero de unidades vendidas: ",clave)
     articulos[int(clave)]["cantidad"]-=int(unidades)
     registroVenta = len(caja) + 1
-    ventas = {registroVenta:{id:int(clave),"marca":articulos[int(clave)]["marca"],"unidades": int(unidades)}}
+    ventas = {registroVenta :{"id":int(clave),"marca":articulos[int(clave)]["marca"],"unidades": int(unidades)}}
     caja.update(ventas)
     print("\nGenerando reporte...\n")
     print("Regsistro de la venta N: {}".format(registroVenta))
