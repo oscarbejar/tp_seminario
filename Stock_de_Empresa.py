@@ -7,36 +7,23 @@ from Modificacion import *
 from Ventas import *
 
 def main():
+    bienvenida()
     mostrarMenuPpl()
-    op = ingresarOpcion("Seleccione por favor opcion: ")
-    op = validarMenu(op,"Seleccione por favor opcion: ", menuppl)
-    msjSeleccionarOpcion(op)
+    mostrarProg()
 
-    if op == "1":
-        ingresarArt(ingresosArt())
-    if op == "2":
-        verArticulo()
-    if op == "3":
-        modificarArt()
-    if op == "4":
-        clave = validarVenta()
-        ingresarUnidades(clave)
-    if int(op) == len(menuppl):
-        pass
-
-
-
-bienvenida()
-main()
-conf = repetirOperacion()
-while (conf == "y" or conf == "Y"):
-    main()
     conf = repetirOperacion()
-print("Stock Actual")
-verStock()
-print("\nGuardando información...\n")
-guardarInventario()
-print("Stock Actual")
-verStock()
-despedida()
+    while (conf == "y" or conf == "Y"):
+        mostrarMenuPpl()
+        mostrarProg()
+        conf = repetirOperacion()
+    print("Stock Actual")
+    verStock()
+    print("\nGuardando información...\n")
+    guardarInventario()
+    despedida()
+
+
+
+main()
+
 #2

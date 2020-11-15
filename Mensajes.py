@@ -1,4 +1,6 @@
 from MenuPpl import *
+from Ingresos import *
+from Mensajes import *
 
 def bienvenida():
     print("_"*60)
@@ -37,3 +39,26 @@ def msjSeleccionarOpcion(op):
     print("\n{}".format(menuppl[int(op)]).upper())
     print("_"*60)
     print("-"*60)
+
+def mostrarProg():
+        op = ingresarOpcion("Seleccione por favor opcion: ")
+        op = validarMenu(op,"Seleccione por favor opcion: ", menuppl)
+        msjSeleccionarOpcion(op)
+
+        if op == "1":
+            ingresarArt(ingresosArt())
+            guardarInventario()
+        if op == "2":
+            print("Stock actual")
+            verStock()
+        if op == "3":
+            verArticulo()
+        if op == "4":
+            modificarArt()
+            guardarInventario()
+        if op == "5":
+            clave = validarVenta()
+            ingresarUnidades(clave)
+            guardarInventario()
+        if int(op) == len(menuppl):
+            pass
