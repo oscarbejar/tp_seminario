@@ -1,23 +1,23 @@
 from Validador import *
 
-
-def inventario():
-    return None
+"""Inventario de articulos en formato de diccionario"""
 articulos = {
         0:{"marca":"Nike","modelo":"remera","color":"azul","precio":100,"cantidad":10}
     }
-    #{"marca":"Nike","modelo":"remera","color":"azul","precio":100,"cantidad":1}
-#f
+
+"""Metodo que guarda el inventario en un archivo .csv"""    
 def guardarInventario():
     with open("datos.csv", "w") as datos:
-        datos.write(str(articulos))
+        datos.write(str(articulos).strip())
 
+"""Metodo que llama al archivo donde esta el inventario y muestra su contenido en pantalla"""
 def verStock():
     with open('datos.csv') as file:
 	    for line in file:
 	        print(" ID: {}".format(line.strip().upper()))
 
 
+"""Metodo que muestra la informacion de un articulo, ubicandolo por su ID"""
 def verArticulo():
     msjnovalida = "********¡Tipo de Dato no valido!***********\n" 
     msjID = "Ingresar ID del Articulo a visualizar : "

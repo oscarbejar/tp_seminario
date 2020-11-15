@@ -2,6 +2,7 @@ from MenuPpl import *
 from Ingresos import *
 from Mensajes import *
 
+"""Mensaje de bienvenida al inicio del programa"""
 def bienvenida():
     print("_"*60)
     print("-"*60)
@@ -18,6 +19,7 @@ def bienvenida():
     print("-"*60)
     print("")
 
+"""Metodo que muestra mensaje de programa finalizado"""
 def despedida():
     print("_"*60)
     print("-"*60)
@@ -25,7 +27,7 @@ def despedida():
     print("_"*60)
     print("-"*60)
 
-
+"""Metodo que muestra el menu principal del programa"""
 def mostrarMenuPpl():
     print("-"*60)
     print("Menu Principal de Opciones: ")
@@ -33,6 +35,7 @@ def mostrarMenuPpl():
     for o in menuppl:
         print(o ,"-", menuppl[o],"\n")
 
+"""Metodo que muestra las opcin del menu seleccionada"""
 def msjSeleccionarOpcion(op):
     print("_"*60)
     print("-"*60)
@@ -40,6 +43,8 @@ def msjSeleccionarOpcion(op):
     print("_"*60)
     print("-"*60)
 
+"""Metodo que muestra la seccion principal del programa incluyendo el menu ppl y donde se ejecutan los metodos 
+dependiendo a la opcion del menu que se haya seleccionado"""
 def mostrarProg():
         op = ingresarOpcion("Seleccione por favor opcion: ")
         op = validarMenu(op,"Seleccione por favor opcion: ", menuppl)

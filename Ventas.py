@@ -1,10 +1,10 @@
 from Validador import *
 from Inventario import *
 
+"""Diccionario donde guardaremos los registros de ventas"""
 caja = {}
 
-cont = 1
-
+"""Metodo que valida los datos que se ingresan al momento de registrar una venta"""
 def validarVenta():
     msjnovalida = "********¡Tipo de Dato no valido!***********\n" 
     msjID = "Ingresar ID del Articulo : "
@@ -18,7 +18,7 @@ def validarVenta():
         option = confirmacion(msjID)
     return option
     
-
+"""Metodo que muestra e indica si hay disponibilidad de cantidad en stock"""
 def validarCantidad(cant,msj, id):
     while int(cant) > articulos[int(id)]["cantidad"]:
         print("*****La Cantidad supera al Stock Disponible*****")
@@ -26,7 +26,7 @@ def validarCantidad(cant,msj, id):
 
     return cant
 
-
+"""metodo que realiza el ingreso y registro de la venta con detalles de la misma y la guarda un diccionario"""
 def ingresarUnidades(clave):
     print("\nCantidad en Stock actualmente del articulo: {}".format(articulos[int(clave)]["cantidad"]))
     unidades=int(input("ingrese el numero de unidades vendidas: "))
@@ -41,6 +41,7 @@ def ingresarUnidades(clave):
     print("Marca: {}".format(articulos[int(clave)]["marca"]))
     print("Unidades vendidas: {}".format(int(unidades)))
 
+"""Metodo que guarda en un archivo el registro de caja con detalles de la venta"""
 def actualizarCaja():
     with open("ventas.csv", "w") as datos:
         datos.write(str(caja))

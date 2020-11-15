@@ -1,15 +1,15 @@
 from Inventario import *
 from Validador import *
 
-def modificacion():
-    return None
-
+""""Metodo que valida que la opcion ingresada este dentro de las disponibles en el sistema"""
 def valorN(op):
     while int(op) not in articulos[0].keys():
         print("Opcion no encontrada")
         op = int(ingresarOpcion("Seleccione el campo a modificar : "))
     return op
 
+"""Metodo que se encarga de validad y realizar la modificacion de algun articulo seleccionado y disponible en el sistema
+muestra los campos que podemos modificar y una vez seleccionado, actuliza la informacion en el inventario"""
 def modificarArt():
     msjnovalida = "********¡Tipo de Dato no valido!***********\n" 
 
