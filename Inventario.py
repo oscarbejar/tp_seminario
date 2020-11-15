@@ -13,9 +13,9 @@ def guardarInventario():
         datos.write(str(articulos))
 
 def verStock():
-    file = open("datos.txt")
-    print(file.read())
-    file.close
+    with open('datos.txt') as file:
+	    for line in file:
+	        print(" ID: {}".format(line.strip().upper()))
 
 
 def verArticulo():

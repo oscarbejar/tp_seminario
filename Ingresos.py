@@ -38,7 +38,7 @@ def ingresosArt():
         print(msjnovalida)
         cantidad = confirmacion(msjCantidad)
 
-    artNv = {int(idArt) : {"marca": marca, "modelo": modelo,"Color": color,"Precio": precio,"Cantidad": int(cantidad) }}
+    artNv = {int(idArt) : {"marca": marca, "modelo": modelo,"color": color,"precio": precio,"cantidad": int(cantidad) }}
     return artNv
 
 def ingresarArt(artNv):
