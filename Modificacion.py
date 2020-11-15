@@ -3,9 +3,8 @@ from Validador import *
 
 """"Metodo que valida que la opcion ingresada este dentro de las disponibles en el sistema"""
 def valorN(op):
-    while int(op) not in articulos[0].keys():
-        print("Opcion no encontrada")
-        op = int(ingresarOpcion("Seleccione el campo a modificar : "))
+    print("***Opcion no encontrada***")
+    op = ingresarOpcion("Seleccione el campo a modificar : ")
     return op
 
 """Metodo que se encarga de validad y realizar la modificacion de algun articulo seleccionado y disponible en el sistema
@@ -30,9 +29,10 @@ def modificarArt():
         j += 1
 
     opMod = int(ingresarOpcion("Seleccione el campo a modificar : "))
+    
 
-
-        
+    while opMod > len(articulos[0].keys()) or opMod < 1:
+        opMod = int(valorN(opMod))
     if opMod == 1:
         msjMarca = "Ingrese Marca del Articulo: "
         marca = confirmacion(msjMarca)
@@ -59,7 +59,5 @@ def modificarArt():
             print(msjnovalida)
             cantidad = confirmacion(msjCantidad)
         articulos[int(idArt)]["cantidad"] = cantidad
-    else:
-        valorN(opMod)
-        
+    
 
