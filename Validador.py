@@ -50,5 +50,9 @@ def confirmacion(msj):
 def repetirOperacion():
     print("")
     conf = input("¿Deseas realizar otra operación? (y/N): ")
+    while conf != "y" and conf != "Y" and conf != "n" and conf != "N" and conf != "":
+         print("Opcion no valida")
+         conf = input("¿Deseas realizar otra operación? (y/N): ")
+
     return conf
     

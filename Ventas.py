@@ -28,9 +28,10 @@ def validarCantidad(cant,msj, id):
 
 """metodo que realiza el ingreso y registro de la venta con detalles de la misma y la guarda un diccionario"""
 def ingresarUnidades(clave):
+    msjValUnd= "ingrese el numero de unidades vendidas: "
     print("\nCantidad en Stock actualmente del articulo: {}".format(articulos[int(clave)]["cantidad"]))
-    unidades=int(input("ingrese el numero de unidades vendidas: "))
-    unidades = validarCantidad(unidades,"ingrese el numero de unidades vendidas: ",clave)
+    unidades=int(validarN(input(msjValUnd),msjValUnd))
+    unidades = validarCantidad(unidades,msjValUnd,clave)
     articulos[int(clave)]["cantidad"]-=int(unidades)
     registroVenta = len(caja) + 1
     ventas = {registroVenta :{"id":int(clave),"marca":articulos[int(clave)]["marca"],"unidades": int(unidades)}}
