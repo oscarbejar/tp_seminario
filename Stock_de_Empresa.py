@@ -21,8 +21,6 @@ def main():
         mostrarMenuPpl()
         mostrarProg()
         conf = repetirOperacion()
-    print("Stock Actual")
-    verStock()
     print("\nGuardando información...\n")
     guardarInventario()
     despedida()

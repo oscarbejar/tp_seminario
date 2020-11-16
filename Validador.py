@@ -20,7 +20,8 @@ def validarN(option, msj):
 def validarMenu(option, msj, menu):
     msjnovalida = "\n********¡Opción no encontrada!***********\n" 
     while not option.isdigit() or (int(option) not in menu.keys()):
-        mostrarMenuPpl()
+        for o in menu:
+            print(o ,"-", menu[o],"\n")
         print(msjnovalida)
         option = input(msj)
     return option  
@@ -49,5 +50,9 @@ def confirmacion(msj):
 def repetirOperacion():
     print("")
     conf = input("¿Deseas realizar otra operación? (y/N): ")
+    while conf != "y" and conf != "Y" and conf != "n" and conf != "N" and conf != "":
+         print("Opcion no valida")
+         conf = input("¿Deseas realizar otra operación? (y/N): ")
+
     return conf
     
