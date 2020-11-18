@@ -8,7 +8,7 @@ def ingresarOpcion(msj):
     res = validarN(opcion, msj)
     return res
 
-"""Metodo que valida que el tipo de daro ingresado sea numerico"""
+"""Metodo que valida que el tipo de dato ingresado sea numerico"""
 def validarN(option, msj):
     msjnovalida = "********¡Tipo de Dato no valido!***********" 
     while not option.isdigit():

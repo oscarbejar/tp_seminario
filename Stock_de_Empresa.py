@@ -1,5 +1,5 @@
 
-"""Importamos los demas archivos .py donde encopntraremos datos y funciones adicionales"""
+"""Importamos los demas archivos .py donde encontraremos datos y funciones adicionales"""
 from Mensajes import *
 from MenuPpl import *
 from Validador import *

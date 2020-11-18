@@ -35,7 +35,7 @@ def mostrarMenuPpl():
     for o in menuppl:
         print(o ,"-", menuppl[o],"\n")
 
-"""Metodo que muestra las opcin del menu seleccionada"""
+"""Metodo que muestra las opcion del menu seleccionada"""
 def msjSeleccionarOpcion(op):
     print("_"*60)
     print("-"*60)

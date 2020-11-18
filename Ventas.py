@@ -26,7 +26,7 @@ def validarCantidad(cant,msj, id):
 
     return cant
 
-"""metodo que realiza el ingreso y registro de la venta con detalles de la misma y la guarda un diccionario"""
+"""Metodo que realiza el ingreso y registro de la venta con detalles de la misma y la guarda un diccionario"""
 def ingresarUnidades(clave):
     msjValUnd= "ingrese el numero de unidades vendidas: "
     print("\nCantidad en Stock actualmente del articulo: {}".format(articulos[int(clave)]["cantidad"]))
